@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Array Destructing</h3>
+    <p>
+        <i> In JavaScript, array destructuring is a way to extract data from an array and assign it to variables in a
+            concise and easy-to-read way. It is a shorthand syntax that allows you to unpack values from arrays or
+            properties from objects into distinct variables.</i>
+
+        <br>
+        The syntax for array destructuring in JavaScript is:
+        let [variable1, variable2, ..., variableN] = array;
+
+    </p>
+
+    <script>
+        const randomData = ['somnath', 12, { version: '1.2.1', type: 'version control' }];
+        const emozies = ['😀', '🤣', '🙂', '😉', '😙', '🥲'];
+        let [user, age, app] = randomData;
+        let [myfav, nilFav, ...res] = emozies;
+
+        let num1 = 2;
+        let num2 = 5;
+
+        let [firstNum, secondNum] = [num1, num2];
+        // console.log(age);
+        // console.log(secondNum);
+       console.log(myfav,nilFav,res);
+        // console.log(app['version']);
+
+       
+
+
+    </script>
+</body>
+
+</html>
